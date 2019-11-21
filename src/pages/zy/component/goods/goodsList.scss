@@ -1,0 +1,125 @@
+@import '../style/mixins/index.scss';
+.at-list {
+  background: #f2f2f2;
+  padding: 0 24px;
+  .at-list__item-container {
+    margin-top: 20px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 12rpx;
+    padding: 30px;
+    .at-list__item-tit {
+      display: flex;
+      justify-content: space-between;
+      &-t {
+        background: url(../../../../asset/zy/icon/shop.png) no-repeat 0px center;
+        background-size: 40px 40px;
+        font-size: 28px;
+        color: #333333;
+        padding-left: 60px;
+        font-weight: 600;
+      }
+      &-status {
+        font-size: 28px;
+        color: #f85956;
+        text-align: right;
+        line-height: 28px;
+      }
+    }
+    .at-list__item-info {
+      overflow: hidden;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-around;
+      &-img {
+        border-radius: 18px;
+        width: 176px;
+        height: 176px;
+        margin-right: 18px;
+      }
+      &-middle {
+        border-radius: 18px;
+        width: 300px;
+        &-row1 {
+          font-size: 24px;
+          color: #333333;
+          text-align: justify;
+          line-height: 36px;
+          font-weight: 600;
+          margin-top: 4px;
+          & > text {
+            word-break: break-all;
+            word-wrap: break-word;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+          }
+        }
+        &-row2 {
+          font-size: 22px;
+          color: #999999;
+          text-align: justify;
+          line-height: 22px;
+          margin-top: 12px;
+          & > text {
+            margin-right: 10px;
+          }
+        }
+        &-commission {
+          background: #ffd28b;
+          border-radius: 8px;
+          font-size: 22px;
+          color: #944e1f;
+          line-height: 22px;
+          width: 138px;
+          height: 38px;
+          margin-top: 28px;
+          @include flex-center;
+        }
+      }
+      &-right {
+        width: 117px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin-top: 10px;
+        &-price {
+          font-size: 28px;
+          color: #333333;
+          letter-spacing: -0.2px;
+          text-align: right;
+          line-height: 24px;
+          padding-right: 0px;
+        }
+        &-num {
+          font-size: 24px;
+          color: #999999;
+          text-align: right;
+          line-height: 24px;
+          margin-top: 8px;
+        }
+        &-reason {
+          font-size: 24px;
+          color: #ff6011;
+          text-align: right;
+          line-height: 24px;
+          margin-top: 92px;
+          position: relative;
+          &-p {
+            position: absolute;
+            width: 300px;
+            right: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+    .at-list__item-footer-btns {
+      padding-top: 36px;
+    }
+  }
+}

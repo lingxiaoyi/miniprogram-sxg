@@ -1,0 +1,32 @@
+.dialog-wrapper {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  .dialog {
+    position: relative;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    overflow: hidden;
+    .img {
+      width: 100%;
+      display: block;
+      height: 784px;
+    }
+    .close {
+      width: 60px;
+      height: 60px;
+      background-size: cover;
+      background-image: url(../../../../asset/mine/close_icon.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 40px auto;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.novice {
+  background-color: #111114;
+  .tabs {
+    // position: fixed;
+    // left: 0;
+    // right: 0;
+    // z-index: 9;
+    width: 100%;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > .tab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 225px;
+      height: 50px;
+      border: solid 1px #d7a874;
+      background-color: #111114;
+      font-size: 26px;
+      line-height: 36px;
+      color: #cc9966;
+      &.active {
+        background-color: #d7a874;
+        color: #000000;
+      }
+      &.tab-pdd {
+        border-radius: 10px 0 0 10px;
+      }
+      &.tab-jd {
+        border-radius: 0 10px 10px 0;
+      }
+    }
+  }
+  .course {
+    // padding: 148px 0 60px;
+    padding: 60px 0;
+    > .course-pdd,
+    > .course-jd {
+      width: 100%;
+      > .img {
+        width: 100%;
+      }
+    }
+  }
+  .btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 74px;
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 600px;
+      height: 80px;
+      color: #000000;
+      background-color: #bd9466;
+      border-radius: 40px;
+    }
+  }
+}

@@ -1,0 +1,223 @@
+.main {
+  padding-bottom: 120px;
+  .sec1 {
+    width: 750px;
+    height: 303px;
+    text-align: center;
+    background: url(https://h5.suixingou.com/miniprogram-assets/sxg/mine/commissionbg.png);
+    overflow: hidden;
+    background-size: cover;
+    .h3 {
+      font-size: 24px;
+      color: #fff6e5;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 28px;
+      margin-top: 40px;
+    }
+    .num {
+      font-size: 70px;
+      color: #f4c892;
+      letter-spacing: 0;
+      line-height: 70px;
+      margin-top: 16px;
+    }
+    .btn-withdrawal {
+      width: 240px;
+      margin: 25px auto 0;
+      height: 66px;
+      background-image: linear-gradient(0deg, #dfbf8c 5%, #feefd0 100%);
+      border-radius: 37px;
+      font-size: 32px;
+      color: #422307;
+      letter-spacing: 0;
+      line-height: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .sec2 {
+    background: #ffffff;
+    overflow: hidden;
+    .ul {
+      padding: 0 49px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 12px;
+      .li {
+        width: 314px;
+        height: 162px;
+        background: #f9f9f9;
+        border-radius: 12px;
+        text-align: center;
+        margin-top: 24px;
+        .h4 {
+          display: flex;
+          margin-top: 40px;
+          justify-content: center;
+          .text {
+            font-size: 26px;
+            color: #333333;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 26px;
+          }
+          .i-ques {
+            width: 22px;
+            height: 22px;
+            background-size: cover;
+            background-image: url(../../../asset/mine/changjianwenti.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: 12px;
+          }
+        }
+        .h3 {
+          font-size: 36px;
+          color: #cd9a5c;
+          letter-spacing: 0;
+          line-height: 36px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .sec3 {
+    padding: 0 49px;
+    .title {
+      font-size: 32px;
+      color: #333333;
+      letter-spacing: 0;
+      line-height: 32px;
+      padding: 24px 0;
+      text-indent: 16px;
+    }
+    .ul {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-wrap: wrap;
+      .li {
+        width: 176px;
+        height: 128px;
+        background: #f9f9f9;
+        border-radius: 12px;
+        margin-right: 19px;
+        .h4 {
+          display: flex;
+          margin-top: 24px;
+          justify-content: center;
+          .text {
+            font-size: 24px;
+            color: #333333;
+            letter-spacing: 0;
+            line-height: 24px;
+          }
+          .i-ques {
+            width: 22px;
+            height: 22px;
+            background-size: cover;
+            background-image: url(../../../asset/mine/changjianwenti.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: 12px;
+          }
+        }
+        .h3 {
+          font-size: 36px;
+          color: #cd9a5c;
+          letter-spacing: 0;
+          line-height: 36px;
+          margin-top: 20px;
+          text-indent: 24px;
+        }
+        &:last-child {
+          width: 266px;
+        }
+      }
+    }
+  }
+  .sec5 {
+    width: 702px;
+    height: 88px;
+    padding: 0 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    margin: 0 auto;
+    margin-top: 18px;
+    .text {
+      font-size: 30px;
+      color: #222222;
+    }
+    .icon {
+      width: 32px;
+      height: 32px;
+      background-size: cover;
+      background-image: url(../../../asset/mine/copy@3x.png);
+    }
+  }
+}
+.dialog-wrapper {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0; //display: none;
+  .dialog {
+    position: relative;
+    width: 550px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 0 30px 42px;
+    .head {
+      font-size: 30px;
+      color: #333333;
+      letter-spacing: 1.2px;
+      text-align: center;
+      line-height: 30px;
+      margin-top: 52px;
+      font-weight: 600;
+    }
+    .con {
+      .row1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .li {
+          font-size: 28px;
+          color: #666666;
+          letter-spacing: 0;
+          text-align: center;
+          line-height: 42px;
+          margin-top: 24px;
+          width: 100%;
+        }
+      }
+      .btn-confirm {
+        background-image: linear-gradient(-130deg, #ff242a 0%, #ff2c65 100%);
+        border-radius: 36px;
+        width: 260px;
+        height: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        color: #ffffff;
+        letter-spacing: 3.5px;
+        text-align: center;
+        margin: 40px auto 0;
+      }
+    }
+  }
+}

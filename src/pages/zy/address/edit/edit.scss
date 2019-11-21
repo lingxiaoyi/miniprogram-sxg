@@ -1,0 +1,235 @@
+.edit {
+  min-height: 100%;
+  background: #f5f5f5;
+  padding: 20px 24px 0;
+  .content {
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    font-size: 28px;
+    .input-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-bottom: 60px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .desc {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        margin-right: 72px;
+      }
+      .input {
+        width: 100%;
+        padding-left: 190px;
+        z-index: 999;
+        &.none {
+          display: none;
+        }
+        &.block {
+          display: block;
+        }
+        &.area {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          padding-right: 28px;
+          flex: 1;
+          background-repeat: no-repeat;
+          background-size: 28px 28px;
+          background-image: url('./../../../../asset/zy/address/arrow-right.png');
+          background-position: right center;
+        }
+      }
+      .input-placeholder {
+        color: #999;
+      }
+    }
+  }
+  .default-wrap {
+    display: flex;
+    align-items: center;
+    height: 96px;
+    padding: 0 30px;
+    margin: 20px 0 48px;
+    background: #fff;
+    border-radius: 12px;
+    font-size: 28px;
+    color: #333;
+    .icon-wrap {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      .icon {
+        display: flex;
+        align-items: center;
+        width: 60px;
+        height: 36px;
+        background: rgba(153,153,153,0.09);
+        border: 3px solid #999;
+        border-radius: 42px;
+        padding: 0 9px;
+        transition: .1s ease-out;
+        .point {
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background: #999;
+          transition: .2s ease-out;
+          -webkit-overflow-scrolling: touch;
+          transform: translate(0, 0);
+        }
+        &.active {
+          background: rgba(237,23,30,0.09);
+          border-color: #F85956;
+          .point {
+            background: #F85956;
+            transform: translate(24px, 0);
+          }
+        }
+      }
+    }
+  }
+  .save {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 498px;
+    height: 80px;
+    background: #d4a874;
+    border-radius: 40px;
+    opacity: 0.46;
+    font-size: 30px;
+    color: #fff;
+    &.active {
+      opacity: 1;
+    }
+  }
+  .selector-wrap {
+    &.active {
+      .bg {
+        display: block;
+      }
+      .selecotrs {
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+    &.leave {
+      .bg {
+        display: none;
+      }
+      .selecotrs {
+        transform: translate3d(-50%, 100%, 0);
+      }
+    }
+    .bg {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 999999;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .selecotrs {
+      position: fixed;
+      top: auto;
+      bottom: 0;
+      right: auto;
+      left: 50%;
+      z-index: 1000000;
+      transition: .3s ease-out;
+      -webkit-overflow-scrolling: touch;
+      padding-top: 34px;
+      width: 100%;
+      height: 970px;
+      background: #FFFFFF;
+      box-shadow: 0 0 18px 0 rgba(0,0,0,0.12);
+      border-radius: 18px 18px 0 0;
+      .title-wrap {
+        display: flex;
+        align-items: center;
+        padding: 0 34px;
+        font-size: 36px;
+        font-weight: 600;
+        color: #333;
+        .placeholder {
+          flex: 1;
+        }
+        .close {
+          width: 48px;
+          height: 48px;
+          background: url('../../../../asset/zy/address/close.png');
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+        }
+      }
+      .tabs {
+        width: 100%;
+        font-size: 30px;
+        color: #333;
+        padding: 38px 34px 34px;
+        border-bottom: 2px solid #f5f5f5;
+        white-space: nowrap;
+        .tab {
+          display: inline-block;
+          margin-right: 73px;
+          &.default {
+            position: relative;
+            color: #FF2429;
+            &::after {
+              position: absolute;
+              left: 50%;
+              transform: translate(-50%, 0);
+              bottom: -12px;
+              content: ' ';
+              width: 36px;
+              height: 6px;
+              background: #F85956;
+              border-radius: 3px;
+            }
+          }
+        }
+      }
+      .area-container {
+        height: 792px;
+        .area-list {
+          scroll-view {
+            height: 100%;
+          }
+          .area-item {
+            display: flex;
+            align-items: center;
+            height: 90px;
+            font-size: 28px;
+            color: #333;
+            padding: 0 34px;
+            &:last-child {
+              margin-bottom: 30px;
+            }
+            &.active {
+              color: #ED171F;
+              .logo {
+                display: block;
+              }
+            }
+            .logo {
+              display: none;
+              flex: 1;
+              height: 39px;
+              background-image: url('../../../../asset/zy/address/active.png');
+              background-size: 39px 39px;
+              background-position: right center;
+              background-repeat: no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+}

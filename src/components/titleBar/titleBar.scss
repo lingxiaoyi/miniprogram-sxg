@@ -1,0 +1,61 @@
+.title-bar {
+  position: relative;
+  box-sizing: content-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 750px;
+  height: 88px;
+  padding-top: 40px;
+  font-size: 36px;
+  background-color: #ffffff;
+  color: #333333;
+  z-index: 99;
+  .title-bar-home {
+    padding-left: 24px;
+    padding-right: 202px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo {
+      position: absolute;
+      left: 24px;
+      width: 124px;
+      height: 32px;
+      background-image: url('../../asset/components/logo.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    .content {
+      flex: 1;
+    }
+  }
+  .title-bar-others {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .back {
+      position: absolute;
+      left: 0;
+      width: 68px;
+      height: 100%;
+      background-image: url('../../asset/components/back.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 21px 36px;
+    }
+    .title {
+      flex: 1;
+      font-size: 36px;
+      // color: #333333;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.at-list__item-footer {
+  display: flex;
+  justify-content: flex-end;
+  & > view,
+  & > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    width: 152px;
+    height: 56px;
+    color: #666666;
+    font-size: 28px;
+    outline: 0;
+    border: 1px solid #d2d2d2;
+    border-radius: 28px;
+    background-color: transparent;
+    margin: 0;
+    margin-left: 18px;
+    padding: 0;
+    &::after {
+      border: 0;
+      border-radius: 0;
+      width: initial;
+      height: initial;
+    }
+
+    &.active {
+      color: #ffffff;
+      background: #d7a874;
+      border: 0;
+    }
+  }
+}

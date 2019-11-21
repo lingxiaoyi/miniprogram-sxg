@@ -1,0 +1,40 @@
+// .dailypush {
+//   padding-top: 80px;
+//   .tabs-wrap {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 750px;
+//     height: 80px;
+//     background-color: #ffffff;
+//     z-index: 9;
+//     .tabs {
+//       width: 750px;
+//       height: 80px;
+//       display: flex;
+//       justify-content: space-around;
+//       align-items: center;
+//       color: #333333;
+//       font-size: 32px;
+//       padding-bottom: 14px;
+//       border-bottom: 1px solid #f0f0f0;
+//       .tab {
+//         &.active {
+//           position: relative;
+//           color: #ff273b;
+//           &::after {
+//             content: '';
+//             position: absolute;
+//             left: 50%;
+//             bottom: -12px;
+//             width: 26px;
+//             height: 6px;
+//             transform: translate(-50%);
+//             background-color: #ff242a;
+//             border-radius: 3px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

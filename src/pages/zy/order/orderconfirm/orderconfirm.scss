@@ -1,0 +1,249 @@
+.detail {
+  background: #f5f5f5;
+  padding: 0 24rpx;
+  width: 750rpx;
+  min-height: 100%;
+  .space {
+    height: 20rpx;
+  }
+  .postbox {
+    width: 702rpx;
+    height: 190rpx;
+    background: url(../../../../asset/zy/icon/adressbg.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    .noaddress {
+      width: 702rpx;
+      height: 190rpx;
+      font-size: 28px;
+      color: #333333;
+      text-align: center;
+      line-height: 190rpx;
+      display: block;
+    }
+    .arrow {
+      position: absolute;
+      width: 28rpx;
+      height: 28rpx;
+      background: url(../../../../asset/zy/icon/arrow.png) no-repeat;
+      background-size: 100% 100%;
+      right: 28rpx;
+      top: 81rpx;
+    }
+    .address {
+      width: 702rpx;
+      height: 190rpx;
+      padding: 10rpx 100rpx 15rpx 24rpx;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      justify-content: center;
+      .name {
+        font-size: 36rpx;
+        color: #333333;
+        margin-right: 30rpx;
+        font-weight: 600;
+        line-height: 70rpx;
+      }
+      .phone {
+        font-size: 36rpx;
+        color: #333333;
+        font-weight: 600;
+        line-height: 70rpx;
+      }
+      .adbox {
+        font-size: 24px;
+        color: #666666;
+        line-height: 40rpx;
+        .tag {
+          float: left;
+          height: 32px;
+          margin-right: 10rpx;
+          margin-top: 4px;
+          width: 68px;
+          background: url(../../../../asset/zy/icon/vip.png) no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+  .probox {
+    margin-top: 20px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 12rpx;
+    padding: 0 20px;
+    .tit {
+      height: 90px;
+      background: url(../../../../asset/zy/icon/shop.png) no-repeat 0px center;
+      background-size: 40px 40px;
+      font-size: 28px;
+      color: #333333;
+      padding-left: 60px;
+      font-weight: 600;
+      line-height: 90px;
+    }
+    .pro-info {
+      overflow: hidden;
+      .pro-img {
+        border-radius: 18px;
+        width: 176px;
+        height: 176px;
+        float: left;
+        margin-right: 18px;
+      }
+      .right-info {
+        height: 176px;
+        overflow: hidden;
+        padding-top: 10px;
+        position: relative;
+        .pro-tit-box {
+          overflow: hidden;
+          .pro-tit {
+            width: 72%;
+            float: left;
+            line-height: 30px;
+            font-size: 24px;
+            color: #333333;
+            text-align: justify;
+            font-weight: 600;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; // 控制多行的行数
+            -webkit-box-orient: vertical;
+          }
+          .one-price {
+            width: 28%;
+            float: right;
+            font-size: 28px;
+            color: #333333;
+            text-align: right;
+            line-height: 24px;
+          }
+        }
+        .pro-type {
+          margin-top: 8rpx;
+          font-size: 22px;
+          color: #999999;
+          text-align: justify;
+          line-height: 22px;
+        }
+        .pro-num-box {
+          height: 48px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 468px;
+          .pro-commission {
+            background: #ffd28b;
+            border-radius: 8px;
+            float: left;
+            height: 38px;
+            padding: 0 8px;
+            line-height: 38px;
+            font-size: 22px;
+            color: #944e1f;
+            margin-top: 8px;
+          }
+          .count {
+            height: 48px;
+            float: right;
+            .decrease {
+              width: 66px;
+              height: 48px;
+              float: left;
+              margin-right: 8px;
+              background: url(../../../../asset/zy/icon/subtract.png) no-repeat center center;
+              background-size: 53px 48px;
+            }
+            .num {
+              width: 76px;
+              height: 48px;
+              float: left;
+              margin-right: 8px;
+              background: #f5f5f5;
+              font-size: 28px;
+              color: #333333;
+              text-align: center;
+              line-height: 48px;
+            }
+            .increase {
+              width: 66px;
+              height: 48px;
+              float: left;
+              background: url(../../../../asset/zy/icon/add.png) no-repeat center center;
+              background-size: 53px 48px;
+            }
+          }
+        }
+      }
+    }
+    .method {
+      margin-top: 32px;
+      overflow: hidden;
+      line-height: 64px;
+      font-size: 28px;
+      .key {
+        float: left;
+        color: #666666;
+      }
+      .method-value {
+        color: #333333;
+        float: right;
+      }
+    }
+    .price {
+      overflow: hidden;
+      line-height: 88px;
+      font-size: 28px;
+      .key {
+        float: left;
+        color: #666666;
+      }
+      .price-value {
+        color: #f85956;
+        float: right;
+      }
+    }
+  }
+  .bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 750px;
+    height: 108px;
+    .total {
+      float: left;
+      height: 108px;
+      width: 510px;
+      text-align: right;
+      color: #f85956;
+      line-height: 108px;
+      padding-right: 15px;
+      font-size: 28px;
+      .rmb {
+        font-size: 24px;
+      }
+      .int {
+        font-weight: 600;
+        font-size: 36px;
+      }
+      .float {
+        font-weight: 600;
+      }
+    }
+    .submit {
+      float: right;
+      background: #d7a874;
+      height: 108px;
+      width: 240px;
+      font-size: 32px;
+      color: #ffffff;
+      letter-spacing: 1.78px;
+      text-align: center;
+      line-height: 108px;
+    }
+  }
+}

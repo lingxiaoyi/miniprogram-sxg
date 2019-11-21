@@ -1,0 +1,230 @@
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 24px;
+  right: 24px;
+  height: 94px;
+  margin-bottom: 40px;
+  display: flex;
+  z-index: 99;
+  // padding-bottom: env(safe-area-inset-bottom);
+  .tab-bar-wrap {
+    border-radius: 47px;
+    background-color: #222222;
+    box-shadow: 0 6px 14px rgba(27, 27, 27, 0.38);
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    .tab-bar-item {
+      flex: 1;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      &.item1 {
+        position: relative;
+        .img {
+          width: 90px;
+          height: 90px;
+        }
+        .txt {
+          display: none;
+        }
+        .btn {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          &::after {
+            border: none;
+          }
+        }
+      }
+      .img {
+        width: 48px;
+        height: 48px;
+      }
+      .txt {
+        font-size: 20px;
+      }
+    }
+  }
+  .share-btn-wrap {
+    position: relative;
+    // margin-left: 22px;
+    margin-left: 146px;
+    width: 136px;
+    height: 100%;
+    background-color: #222222;
+    box-shadow: 0 6px 14px rgba(27, 27, 27, 0.38);
+    border-radius: 47px;
+    .share-btn {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      // padding: 10px 0;
+      .img {
+        width: 48px;
+        height: 48px;
+      }
+      .txt {
+        font-size: 20px;
+        color: #dcad7c;
+      }
+    }
+    .btn {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      &::after {
+        border: none;
+      }
+    }
+  }
+  .share-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .canvas-wrap {
+      flex: 1;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .canvas-img {
+        width: 480px;
+        height: 866px;
+      }
+      .canvas-show {
+        // prettier-ignore
+        width: 720PX;
+        // prettier-ignore
+        height: 1300PX;
+        position: absolute;
+        left: -99999px;
+      }
+    }
+    .btns-wrap {
+      display: flex;
+      width: 100%;
+      height: 240px;
+      background-color: #ffffff;
+      justify-content: space-around;
+      .item {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 0;
+        .icon {
+          width: 117px;
+          height: 117px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          &.wechat {
+            background-image: url('../../asset/share/wechat.png');
+          }
+          &.download {
+            background-image: url('../../asset/share/download.png');
+          }
+          &.link {
+            background-image: url('../../asset/share/link.png');
+          }
+        }
+        .txt {
+          font-size: 26px;
+          color: #666666;
+        }
+        &.share {
+          position: relative;
+          width: 128px;
+          height: 100%;
+          .btn {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            &::after {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  // 邀请有奖弹窗
+  .invite-card-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .invite-card {
+      position: absolute;
+      bottom: 40px;
+      // left: 0;
+      // z-index: 999;
+      width: 730px;
+      height: 471px;
+      .invite-bg {
+        width: 100%;
+        height: 100%;
+      }
+      .avatar {
+        position: absolute;
+        left: 186px;
+        bottom: 0;
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+      }
+      .btn {
+        position: absolute;
+        top: 250px;
+        left: 186px;
+        width: 357px;
+        height: 86px;
+        background-color: transparent;
+        &::after {
+          border: none;
+        }
+      }
+      .close {
+        position: absolute;
+        right: 0;
+        top: -60px;
+        width: 48px;
+        height: 48px;
+        background-image: url('../../asset/share/close.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+  }
+}

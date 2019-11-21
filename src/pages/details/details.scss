@@ -1,0 +1,84 @@
+.detail {
+  width: 750px;
+  overflow: hidden;
+  background-color: #fff;
+  .img-box {
+    background-color: #f2f2f2;
+    width: 750rpx;
+    height: 750rpx;
+    .img {
+      width: 750rpx;
+      height: 750rpx;
+    }
+  }
+  .shop-info {
+    padding: 24px;
+    overflow: hidden;
+    .title {
+      font-size: 30px;
+      line-height: 36px;
+      color: #333333;
+      font-weight: 600;
+      word-break: break-all;
+      word-wrap: break-word;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+    }
+    .row1 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 20px;
+      .tag {
+        width: 104px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: #653022;
+        background-image: linear-gradient(220deg, #fbdeb9 0%, #f5c088 100%);
+        border-radius: 8px;
+      }
+      .price {
+        font-size: 40px;
+        color: #151515;
+        margin-left: 12px;
+        line-height: 40px;
+      }
+      .price2 {
+        font-size: 26rpx;
+        color: #999999;
+        margin-left: 18px;
+        text-decoration: line-through;
+      }
+    }
+    .row2 {
+      width: 100%;
+      height: 158px;
+      background: url(../../asset/details/detail-tb-copy.png);
+      background-size: cover;
+      margin-top: 25px;
+      font-size: 32px;
+      font-weight: 600;
+      .p {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .txt-prompt {
+      width: 590px;
+      height: 33px;
+      margin: 24px auto;
+      background: url(../../asset/details/txt-prompt.png);
+      background-size: cover;
+    }
+  }
+}

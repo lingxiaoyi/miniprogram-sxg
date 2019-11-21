@@ -1,0 +1,390 @@
+.main {
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+  background: #000217;
+  padding-bottom: 127px;
+  .bar-line {
+    width: 100%;
+    height: 18px;
+  }
+  .header-bg {
+    width: 100%;
+    background: #000217 url(https://h5.suixingou.com/miniprogram-assets/sxg/freegoods/banner.png) no-repeat;
+    background-size: cover;
+    height: 538px;
+    position: relative;
+    .bignum {
+      font-size: 72px;
+      color: #be602e;
+      position: absolute;
+      top: 210px;
+      text-align: center;
+      width: 100%;
+      font-weight: 800;
+    }
+  }
+  .btn-rule {
+    position: absolute;
+    top: 190px;
+    right: 0;
+    width: 48px;
+    height: 122px;
+    background: url(../../asset/freegoods/btn-rule1.png);
+    background-size: cover;
+  }
+}
+.goods-ul {
+  background: #fff;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 45px;
+  border-radius: 14px 16px 16px 16px;
+  .li {
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    .img-wrap {
+      width: 240px;
+      height: 240px;
+      position: relative;
+      overflow: hidden;
+      .img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+      }
+      .img-tag {
+        width: 80px;
+        height: 40px;
+        background: url(../../asset/freegoods/i-tag.png);
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    .info {
+      flex: 1;
+      margin-left: 20px;
+    }
+    .row1 {
+      .title {
+        position: relative;
+        word-break: break-all;
+        word-wrap: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 36px;
+        color: #222222;
+      }
+    }
+    .row2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+      .tag {
+        width: 131px;
+        height: 28px;
+        background: url(../../asset/freegoods/tag-cou.png);
+        background-size: 131px 28px;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #ff391f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .text {
+        font-size: 24px;
+        letter-spacing: -1px;
+        color: #999999;
+      }
+    }
+    .row3 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      align-items: center;
+      .price {
+        color: #ff391f;
+        .text1 {
+          font-size: 30px;
+        }
+        .text2 {
+          font-size: 48px;
+        }
+        .text3 {
+          font-size: 22px;
+          color: #999999;
+          margin-left: 10px;
+          text-decoration: line-through;
+        }
+      }
+      .btn {
+        width: 150px;
+        height: 52px;
+        color: #fff;
+        font-size: 30px;
+        line-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ff391f;
+        border-radius: 26px;
+        border: solid 2px #ff391f;
+        .icon {
+          width: 11px;
+          height: 20px;
+          background: url(../../asset/freegoods/i-arrow.png);
+          background-size: cover;
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+}
+.goods-ul-dialog {
+  margin-top: 0;
+  .li {
+    .img-wrap {
+      width: 200px;
+      height: 200px;
+    }
+    .row3 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      align-items: center;
+      .price {
+        color: #ff391f;
+        .text1 {
+          font-size: 30px;
+        }
+        .text2 {
+          font-size: 42px;
+        }
+        .text3 {
+          font-size: 22px;
+          color: #999999;
+          margin-left: 10px;
+          text-decoration: line-through;
+        }
+      }
+      .btn {
+        width: 150px;
+        height: 52px;
+        color: #fff;
+        font-size: 30px;
+        line-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ff391f;
+        border-radius: 26px;
+        border: solid 2px #ff391f;
+        .icon {
+          width: 11px;
+          height: 20px;
+          background: url(../../asset/freegoods/i-arrow.png);
+          background-size: cover;
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+}
+scroll-view {
+  height: 100%;
+  background: #fff;
+}
+.dialog-wrapper {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  .dialog {
+    position: relative;
+    width: 690px;
+    height: 1032px;
+    background: url(https://h5.suixingou.com/miniprogram-assets/sxg/freegoods/rule.png);
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    overflow: hidden;
+    .footer {
+      .btn-confirm {
+        width: 430px;
+        height: 72px;
+        color: #fff;
+        font-size: 40px;
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(100deg, #ffcf46 0%, #f1ad21 100%);
+        border-radius: 56px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .dialog-goods {
+    height: auto;
+    background-color: #fde9c4;
+    border-radius: 16px;
+    background-image: url('data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==');
+    .header {
+      overflow: hidden;
+      .title {
+        font-size: 42px;
+        line-height: 42px;
+        color: #bf602e;
+        text-align: center;
+        margin-top: 40px;
+        font-weight: 600;
+      }
+      .row2 {
+        margin-top: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #b28240;
+        .text {
+          font-size: 26px;
+          margin: 0 10px;
+          line-height: 26px;
+        }
+        .ul {
+          font-size: 26px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 26px;
+          color: #b28240;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .text {
+            width: 38px;
+            height: 38px;
+            color: #ffffff;
+            background-color: #483131;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:last-child {
+              background-color: #ff391f;
+            }
+          }
+        }
+      }
+    }
+    .body {
+      height: 720px;
+      margin-top: 30px;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 20px;
+      .btn {
+        width: 310px;
+        height: 80px;
+        background-color: #d7b381;
+        border-radius: 40px;
+        font-size: 34px;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:last-child {
+          background-image: linear-gradient(0deg, #ff391f 0%, #ff8343 100%);
+        }
+        .text {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+}
+.bottom-bar {
+  width: 710px;
+  background-size: cover;
+  color: #fff;
+  font-size: 20px;
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+
+  .icon-home {
+    width: 88px;
+    height: 88px;
+    background: url(../../asset/freegoods/home.png);
+    background-size: cover;
+  }
+}
+.swiper-wrapper {
+  width: 582px;
+  overflow: hidden;
+  height: 60px;
+  //background: url(../../asset/freegoods/bottom-bar.png);
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  background-size: cover;
+  .swiper-wrapper-ul {
+    width: 582px;
+    height: 60px;
+    .li {
+      width: 582px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0px;
+      color: #ffffff;
+    }
+  }
+}
+
+@keyframes rowup {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.rowup {
+  animation: 4s rowup linear infinite normal;
+  position: relative;
+  animation-fill-mode: none;
+}

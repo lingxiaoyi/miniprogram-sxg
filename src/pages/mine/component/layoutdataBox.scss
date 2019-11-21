@@ -1,0 +1,69 @@
+.showdata-box {
+  width: 750px;
+  height: 237px;
+  margin-top: 18px;
+  background: #fff;
+  .row1 {
+    height: 100px;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.17);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 24px;
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .text {
+        font-size: 30px;
+        color: #333333;
+        line-height: 30px;
+        font-weight: 600;
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      .text {
+        font-size: 24px;
+        color: #999999;
+        line-height: 24px;
+      }
+      .i-more {
+        width: 40px;
+        height: 100%;
+        background-size: 32px 32px;
+        background-image: url(../../../asset/mine/i-more.png);
+        background-position: right center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    .item {
+      text-align: center;
+      .text {
+        font-size: 24px;
+        color: #999999;
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+      }
+      .h3 {
+        font-size: 38px;
+        line-height: 38px;
+        margin-top: 30px;
+        color: #333333;
+        display: block;
+        width: 100%;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,0 +1,271 @@
+.main {
+  background: #f2f2f2;
+  padding-bottom: 146px;
+  min-height: 100%;
+  .sec1 {
+    width: 750px;
+    height: 226px;
+    text-align: center;
+    background: url(https://h5.suixingou.com/miniprogram-assets/sxg/mine/fans-head-bg.png);
+    background-size: cover;
+    overflow: hidden;
+    .h3 {
+      font-size: 32px;
+      color: #fff6e5;
+      line-height: 32px;
+      margin-top: 50px;
+    }
+    .num {
+      font-size: 70px;
+      color: #f4c892;
+      line-height: 70px;
+      margin-top: 24px;
+    }
+  }
+  .sec2 {
+    .tabs-hd-wrapper {
+      height: 88px;
+      width: 100%;
+      background: #fff;
+    }
+    .tabs-hd {
+      height: 88px;
+      width: 100%;
+      padding: 0 40px;
+      display: flex;
+      justify-content: center;
+      background: #fff;
+      &.fixed {
+        position: fixed;
+        top: 110px;
+        left: 0;
+      }
+      .li {
+        height: 65px;
+        font-size: 28px;
+        width: 50%;
+        color: #333333;
+        line-height: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &.active:after {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          transform: translateX(-50%);
+          background: #cd9a5c;
+          border-radius: 6px;
+          width: 40px;
+          height: 6px;
+        }
+      }
+    }
+    .tabs-bd {
+      .ul {
+        background: #fff;
+        .li {
+          padding: 24px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-top: 1px solid #f2f2f2;
+          .head-img {
+            height: 90px;
+            width: 90px;
+            .img {
+              height: 100%;
+              width: 100%;
+              border-radius: 50%;
+            }
+          }
+          .info {
+            margin-left: 20px;
+            height: 100%;
+            flex: 1;
+            .h3 {
+              font-size: 30px;
+              color: #333333;
+              line-height: 30px;
+              width: 100%;
+              font-weight: 600;
+            }
+            .text {
+              font-size: 24px;
+              color: #666666;
+              letter-spacing: 1.2px;
+              line-height: 24px;
+              margin-top: 12px;
+            }
+          }
+          .i-more {
+            width: 32px;
+            height: 32px;
+            background-size: 32px 32px;
+            background-image: url(../../../asset/mine/copy@3x.png);
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+      .nomore {
+        background: #fff;
+        height: 88px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: #666;
+        border-top: 1px solid #f2f2f2;
+      }
+      .bar-bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #efc491;
+        height: 88px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: #653022;
+      }
+    }
+  }
+}
+.dialog-wrapper {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  .dialog {
+    position: relative;
+    width: 494px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    overflow: hidden;
+    .dialog-ani {
+      background: #fff;
+      border-radius: 16px;
+    }
+    .head {
+      height: 242px;
+      position: relative;
+      background: url(https://h5.suixingou.com/miniprogram-assets/sxg/mine/Bitmap.png);
+      overflow: hidden;
+      background-size: cover;
+      .head-img {
+        width: 124px;
+        height: 124px;
+        margin: 30px auto 0;
+        .img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      .name {
+        font-size: 32px;
+        color: #f4c892;
+        letter-spacing: 0;
+        line-height: 32px;
+        margin-top: 20px;
+        text-align: center;
+      }
+      .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-size: 26px 26px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url(../../../asset/mine/CombinedShape@1.5x.png);
+        width: 68px;
+        height: 68px;
+      }
+    }
+    .con {
+      .row1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e8e8e8;
+        padding-bottom: 30px;
+        .li {
+          width: 100%;
+          text-align: center;
+          .h6 {
+            font-size: 24px;
+            color: #333333;
+            letter-spacing: 0;
+            line-height: 24px;
+            margin-top: 34px;
+          }
+          .h3 {
+            font-size: 36px;
+            color: #daaf88;
+            letter-spacing: 0;
+            line-height: 36px;
+            margin-top: 24px;
+          }
+        }
+      }
+      .row2 {
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        color: #666666;
+        letter-spacing: 0;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3(0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut;
+}

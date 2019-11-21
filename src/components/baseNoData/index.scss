@@ -1,0 +1,13 @@
+.nodata {
+  font-size: 28px;
+  color: #333;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
+  .img {
+    width: 480px;
+    margin: 200px auto 50px;
+    display: block;
+  }
+}

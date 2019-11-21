@@ -1,0 +1,28 @@
+.goods-list {
+  width: 100%;
+  &.goods-card-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 24px;
+    .card {
+      margin-bottom: 18px;
+      &:nth-child(2n) {
+        margin-left: 18px;
+      }
+    }
+  }
+
+  &.goods-item-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    padding: 24px;
+    .item {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,266 @@
+.main {
+  background: #f2f2f2;
+  width: 750px;
+  padding-bottom: 64px;
+  .sec1 {
+    background: #000;
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+    .sec1-con {
+      height: 96px;
+      padding: 0 26px;
+      margin-top: 30px;
+      display: flex;
+      justify-content: flex-start;
+      .head-img {
+        width: 96px;
+        height: 96px;
+        border-radius: 48px;
+        overflow: hidden;
+        background-size: cover;
+        background-image: url(../../asset/mine/head.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        .img {
+          width: 100%;
+          height: 96px;
+          border-radius: 48px;
+        }
+      }
+      .info {
+        margin-left: 20px;
+        .row1 {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+          .name {
+            font-size: 38px;
+            color: #f1c795;
+            line-height: 38px;
+          }
+          .grade-box {
+            height: 40px;
+            background-size: cover;
+            margin-left: 25px;
+            &.dls {
+              width: 136px;
+              height: 40px;
+              background-image: url(../../asset/mine/i-dls.png);
+            }
+            &.cjhy {
+              width: 150px;
+              height: 40px;
+              background-image: url(../../asset/mine/i-cjhy.png);
+            }
+          }
+        }
+        .row2 {
+          margin-top: 12px;
+          line-height: 34px;
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          .p {
+            font-size: 30px;
+            color: #c5c5c5;
+            margin-right: 34px;
+            .num {
+              font-size: 34px;
+            }
+          }
+          .btn-copy {
+            border: 2px solid rgba(197, 197, 197, 0.42);
+            border-radius: 12px;
+            width: 80px;
+            height: 40px;
+            background-size: cover;
+            vertical-align: 3px;
+            font-size: 22px;
+            text-align: center;
+            color: #c5c5c5;
+            letter-spacing: 0;
+            line-height: 40px;
+            margin-top: -4px;
+          }
+        }
+      }
+    }
+  }
+  .sec2 {
+    background-image: url(https://h5.suixingou.com/miniprogram-assets/sxg/mine/mine-sec2-bg.png);
+    width: 702px;
+    height: 131px;
+    margin: 0 auto;
+    margin-top: -131px;
+    overflow: hidden;
+    background-size: cover;
+    .ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 24px;
+      .li {
+        width: 33.333%;
+        text-align: left;
+        color: #8b572a;
+        .h3 {
+          font-size: 34px;
+          line-height: 34px;
+          margin-top: 34px;
+          display: block;
+          font-weight: 600;
+        }
+        .text {
+          font-size: 24px;
+          line-height: 24px;
+          margin-top: 11px;
+        }
+        &:nth-child(1) {
+          width: 240px;
+        }
+        &:nth-child(2) {
+          flex: 1;
+        }
+        &:nth-child(3) {
+          width: 184px;
+        }
+      }
+    }
+  }
+  .sec3 {
+    width: 750px;
+    height: 139px;
+    background: #fff;
+    padding: 0 48px;
+    overflow: hidden;
+    .left {
+      float: left;
+      .h3 {
+        font-size: 24px;
+        color: #333333;
+        text-align: center;
+        line-height: 28px;
+        display: block;
+        margin-top: 15px;
+        font-weight: 600;
+      }
+      .num {
+        font-size: 48px;
+        color: #ff4d4d;
+        text-align: center;
+        line-height: 40px;
+        margin-top: 28px;
+        display: block;
+        font-weight: 600;
+      }
+    }
+    .btn-down-app {
+      border: 2px solid rgba(0, 0, 0, 0.39);
+      float: right;
+      border-radius: 12px;
+      width: 144px;
+      height: 56px;
+      text-align: center;
+      margin-top: 41px;
+      font-size: 28px;
+      color: #333333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+    }
+  }
+  .sec5 {
+    width: 750px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin-top: 18px;
+    border: 0;
+    .btn {
+      width: 750px;
+      height: 100px;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      border: none;
+      outline: none;
+      &::after {
+        border: none;
+      }
+    }
+
+    .text {
+      font-size: 30px;
+      color: #333333;
+      line-height: 30px;
+      font-weight: 600;
+    }
+    .icon {
+      width: 32px;
+      height: 32px;
+      background-size: cover;
+      background-image: url(../../asset/mine/i-more.png);
+    }
+  }
+  .sec-invite {
+    width: 750px;
+    height: 194px;
+    background-image: url(https://h5.suixingou.com/miniprogram-assets/sxg/mine/mine-invite-bg.png);
+    background-size: cover;
+    margin-top: 18px;
+  }
+  .sec-fill {
+    width: 750px;
+    height: 130px;
+  }
+}
+.main-login {
+  background: #f2f2f2;
+  width: 750px;
+  height: 100vh;
+  .head {
+    padding: 50px 24px 58px;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(https://h5.suixingou.com/miniprogram-assets/sxg/mine/mine-login-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    .head-img {
+      width: 124px;
+      height: 124px;
+      background-size: cover;
+      background-image: url(../../asset/mine/head.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      float: left;
+    }
+    .p {
+      font-size: 36px;
+      float: left;
+      color: #ffffff;
+      letter-spacing: 0;
+      line-height: 124px;
+      margin-left: 15px;
+    }
+  }
+  .btn-confirm {
+    width: 670px;
+    height: 88px;
+    margin: 80px auto 0;
+    background: #04c160;
+    border-radius: 8px;
+    font-size: 32px;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
